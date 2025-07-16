@@ -8,7 +8,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copy PHP file to Apache server root
-COPY chk.php /var/www/html/
+COPY index.php /var/www/html/
 
 # Set file permissions (optional but recommended)
 RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
